@@ -11,8 +11,11 @@ EXPORT_SLEEP=20
 
 ## Top-level targets
 
-.PHONY: default
-default: bin/scenegen
+.PHONY: all
+all: build
+
+.PHONY: build
+build: bin/scenegen
 
 
 ## Real targets that actually produce files
